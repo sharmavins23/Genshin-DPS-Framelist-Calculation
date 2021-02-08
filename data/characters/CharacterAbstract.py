@@ -10,6 +10,7 @@ class Character(ABC):
         self.currentLevel, self.maxLevel = levelTuple
 
         self._baseHP = 0
+        self.CurrentHP = 0
         self.MaxHP = 0
 
         self._charBaseATK = 0  # Just the base ATK stat of the character
