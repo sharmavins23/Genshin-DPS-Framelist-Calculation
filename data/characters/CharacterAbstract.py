@@ -22,12 +22,14 @@ class Character(ABC):
         self._baseElementalMastery = 0
         self.ElementalMastery = 0
 
+        self.MaxStamina = 240
+
         self._baseCritRate = 0
         self.CRITRate = 0
         self._baseCritDMG = 0
         self.CRITDMG = 0
 
-        self._baseEnergyRecharge = 0
+        self._baseEnergyRecharge = 1
         self.EnergyRecharge = 0
 
         self._baseCDReduction = 0
