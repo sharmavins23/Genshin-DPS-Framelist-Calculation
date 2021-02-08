@@ -20,6 +20,7 @@ class Zhongli(Character):
             self._baseGeoDMGBonus = 0
         elif 1 < self.currentLevel <= 20 and self.maxLevel == 20:
             # Anywhere from 1 to 20-, smooth to 20-
+            self.currentLevel = 20
             self._baseHP = 2967
             self._charBaseATK = 51
             self._baseDEF = 67
@@ -32,6 +33,7 @@ class Zhongli(Character):
             self._baseGeoDMGBonus = 0
         elif 20 < self.currentLevel <= 40 and self.maxLevel == 40:
             # Anywhere from 20 to 40-, smooth to 40-
+            self.currentLevel = 40
             self._baseHP = 5908
             self._charBaseATK = 101
             self._baseDEF = 297
@@ -44,6 +46,7 @@ class Zhongli(Character):
             self._baseGeoDMGBonus = 0.072
         elif 40 < self.currentLevel <= 50 and self.maxLevel == 50:
             # Anywhere from 40 to 50-, smooth to 50-
+            self.currentLevel = 50
             self._baseHP = 7599
             self._charBaseATK = 130
             self._baseDEF = 382
@@ -56,6 +59,7 @@ class Zhongli(Character):
             self._baseGeoDMGBonus = 0.144
         elif 50 < self.currentLevel <= 60 and self.maxLevel == 60:
             # Anywhere from 50 to 60-, smooth to 60-
+            self.currentLevel = 60
             self._baseHP = 9533
             self._charBaseATK = 163
             self._baseDEF = 479
@@ -68,6 +72,7 @@ class Zhongli(Character):
             self._baseGeoDMGBonus = 0.144
         elif 60 < self.currentLevel <= 70 and self.maxLevel = 70:
             # Anywhere from 60 to 70-, smooth to 70-
+            self.currentLevel = 70
             self._baseHP = 11243
             self._charBaseATK = 192
             self._baseDEF = 564
@@ -80,6 +85,7 @@ class Zhongli(Character):
             self._baseGeoDMGBonus = 0.216
         elif 70 < self.currentLevel <= 80 and self.maxLevel == 80:
             # Anywhere from 70 to 80-, smooth to 80-
+            self.currentLevel = 80
             self._baseHP = 12965
             self._charBaseATK = 222
             self._baseDEF = 651
@@ -92,6 +98,7 @@ class Zhongli(Character):
             self._baseGeoDMGBonus = 0.288
         elif 80 < self.currentLevel <= 90 and self.maxLevel == 90:
             # Anywhere from 80 to 90, smooth to 90
+            self.currentLevel = 90
             self._baseHP = 14695
             self._charBaseATK = 251
             self._baseDEF = 738
