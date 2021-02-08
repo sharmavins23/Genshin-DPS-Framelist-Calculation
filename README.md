@@ -58,7 +58,7 @@ The machine will first split this into portions as follows:
 
 Then, the machine will read this string as the following combo:
 
-```md
+```
 Starting on Zhongli:
 
 1. Perform a normal 5-hit jump combo.
