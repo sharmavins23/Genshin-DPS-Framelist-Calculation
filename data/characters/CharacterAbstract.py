@@ -6,6 +6,8 @@ class Character(ABC):
     # Base stat calculation and initialization
     def __init__(self, levelTuple=(1, 20), constellation=0, talentTuple=(1, 1, 1)):
 
+        # TODO: Input bounds checking and validation
+
         # Pass in (current, max) level values
         self.currentLevel, self.maxLevel = levelTuple
 
