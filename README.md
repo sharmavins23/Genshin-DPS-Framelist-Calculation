@@ -112,6 +112,9 @@ character level 20/20. If a character is 20/40, they will stay at 20/40, or 20+.
 This project is distributed under the MIT license. This is a paraphrasing of a
 [short summary](https://tldrlegal.com/license/mit-license).
 
+All data utilized is sourced from
+[datamines and data gathering sites](https://genshin.honeyhunterworld.com/).
+
 This license is a short, permissive software license. Basically, you can do
 whatever you want with this software, as long as you include the original
 copyright and license notice in any copy of this software/source.
