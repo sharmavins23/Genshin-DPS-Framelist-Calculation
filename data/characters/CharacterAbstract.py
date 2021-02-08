@@ -24,10 +24,15 @@ class Character(ABC):
 
         self.MaxStamina = 240
 
-        self._baseCritRate = 0
+        self._baseCritRate = 0.05
         self.CRITRate = 0
-        self._baseCritDMG = 0
+        self._baseCritDMG = 0.5
         self.CRITDMG = 0
+
+        self._baseHealingBonus = 0
+        self.HealingBonus = 0
+        self._baseIncomingHealingBonus = 0
+        self.IncomingHealingBonus = 0
 
         self._baseEnergyRecharge = 1
         self.EnergyRecharge = 0
