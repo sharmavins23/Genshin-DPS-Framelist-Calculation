@@ -17,6 +17,8 @@ class Character(ABC):
 
         self._charBaseATK = 0  # Just the base ATK stat of the character
         self._baseATK = 0  # ATK stat + weapon base ATK stat
+        self._ATKPercent = 0
+        self._ATKAdditive = 0
         self.ATK = 0
 
         self._baseDEF = 0
