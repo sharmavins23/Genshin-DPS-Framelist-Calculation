@@ -3,6 +3,20 @@
 This repository houses the code for a character database, as well as
 configurable DPS calculator for team composition and real-time DPS analysis.
 
+# How to run?
+
+Currently, the functionality is split into the base level: The `data` database
+contains all character data and character code. The `scripts` interact with this
+database.
+
+Due to Python's file interactions, since the `scripts` are effectively in a
+separate package from the `data` DB, one must run the scripts from the top level
+directory. The current working directory (or TLD) is effectively appended to the
+Python cached system path `sys.path` using the index file on each script. This
+allows users to import **one** headerfile for all database imports.
+
+In the future, this functionality will be changed.
+
 # Broad overview
 
 The goal of this application is to lay out a set of frames in a large 2D array,
