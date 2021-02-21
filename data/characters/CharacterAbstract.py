@@ -97,7 +97,7 @@ class Character(ABC):
         elif self.currentLevel == 60 and self.maxLevel == 70:
             # Level is 60/70, or 60+
             return 8, "60+"
-        elif 60 < self.currentLevel <= 70 and self.maxLevel = 70:
+        elif 60 < self.currentLevel <= 70 and self.maxLevel == 70:
             # Anywhere from 60 to 70-, smooth to 70-
             return 9, "70"
         elif self.currentLevel == 70 and self.maxLevel == 80:
