@@ -69,7 +69,7 @@ class Character(ABC):
         pass
 
     # Helper function to smooth the passed in level as well as indices
-    def __getLevelMappings(self):
+    def _getLevelMappings(self):
         if self.currentLevel == 1 and self.maxLevel == 20:
             # Level is 1/20
             return 0, "1"

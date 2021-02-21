@@ -1,6 +1,6 @@
 import pandas
 from pathlib import Path
-from ..CharacterAbstract import Character  # Abstract parent class
+from ..CharacterAbstract import Character
 
 
 class Zhongli(Character):
@@ -14,11 +14,11 @@ class Zhongli(Character):
     def _calculateBaseStatsOnLevel(self):
         # Read data from CSV
         levelBaseStats = pandas.read_csv(
-            "data/characters/Zhongli/levelBaseStats.csv")
+            "data/characters/ZhongliData/levelBaseStats.csv")
 
         # Get the level mapping index
         # ! This super() call doesn't work???
-        _, levelMappingIndex = super().__getLevelMappings()
+        levelMappingIndex, _ = super()._getLevelMappings()
 
         # Use the level mapping to scrape data from the csv
         self._baseHP = levelBaseStats["Base HP"][levelMappingIndex]
