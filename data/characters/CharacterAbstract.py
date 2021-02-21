@@ -44,11 +44,11 @@ class Character(ABC):
         self.CDReduction = 0
 
         self._basePyroDMGBonus = 0
-        self.PyroDMGBonus
+        self.PyroDMGBonus = 0
         self._baseHydroDMGBonus = 0
-        self.HydroDMGBonus
+        self.HydroDMGBonus = 0
         self._baseDendroDMGBonus = 0
-        self.DendroDMGBonus
+        self.DendroDMGBonus = 0
         self._baseElectroDMGBonus = 0
         self.ElectroDMGBonus = 0
         self._baseAnemoDMGBonus = 0
@@ -58,7 +58,7 @@ class Character(ABC):
         self._baseGeoDMGBonus = 0
         self.GeoDMGBonus = 0
         self._basePhysicalDMGBonus = 0
-        self.PhysicalDMGBonus
+        self.PhysicalDMGBonus = 0
 
         self.Constellation = constellation
         self.TalentLevels = talentTuple

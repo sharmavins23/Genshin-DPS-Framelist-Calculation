@@ -5,7 +5,7 @@ from ..CharacterAbstract import Character  # Abstract parent class
 class Zhongli(Character):
 
     def __init__(self, levelTuple=(1, 20), constellation=0, talentTuple=(1, 1, 1)):
-        super.__init__(levelTuple, constellation, talentTuple)
+        super(Zhongli, self).__init__(levelTuple, constellation, talentTuple)
 
         # Calculate base stats on the level passed in
         self._calculateBaseStatsOnLevel()
