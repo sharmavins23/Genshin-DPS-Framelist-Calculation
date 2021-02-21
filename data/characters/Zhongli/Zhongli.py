@@ -14,7 +14,7 @@ class Zhongli(Character):
     def _calculateBaseStatsOnLevel(self):
         # Read data from CSV
         levelBaseStats = pandas.read_csv(
-            "data/characters/ZhongliData/levelBaseStats.csv")
+            "data/characters/Zhongli/levelBaseStats.csv")
 
         # Get the level mapping index
         # ! This super() call doesn't work???
