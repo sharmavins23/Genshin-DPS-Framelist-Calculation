@@ -68,55 +68,47 @@ class Character(ABC):
         # This data will be scraped on a case-by-case basis programmatically
         pass
 
-    # Helper function to smooth the passed in level
-    def __getLevelMappingStr(self):
+    # Helper function to smooth the passed in level as well as indices
+    def __getLevelMappings(self):
         if self.currentLevel == 1 and self.maxLevel == 20:
             # Level is 1/20
-            return "1"
+            return 0, "1"
         elif 1 <= self.currentLevel <= 20 and self.maxLevel == 20:
             # Anywhere from 1 to 20-, smooth to 20-
-            return "20"
+            return 1, "20"
         elif self.currentLevel == 20 and self.maxLevel == 40:
             # Level is 20/40, or 20+
-            return "20+"
+            return 2, "20+"
         elif 20 < self.currentLevel <= 40 and self.maxLevel == 40:
             # Anywhere from 20 to 40-, smooth to 40-
-            return "40"
+            return 3, "40"
         elif self.currentLevel == 40 and self.maxLevel == 50:
             # Level is 40/50, or 40+
-            return "40+"
+            return 4, "40+"
         elif 40 < self.currentLevel <= 50 and self.maxLevel == 50:
             # Anywhere from 40 to 50-, smooth to 50-
-            return "50"
+            return 5, "50"
         elif self.currentLevel == 50 and self.maxLevel == 60:
             # Level is 50/60, or 50+
-            return "50+"
+            return 6, "50+"
         elif 50 < self.currentLevel <= 60 and self.maxLevel == 60:
             # Anywhere from 50 to 60-, smooth to 60-
-            return "60"
+            return 7, "60"
         elif self.currentLevel == 60 and self.maxLevel == 70:
             # Level is 60/70, or 60+
-            return "60+"
+            return 8, "60+"
         elif 60 < self.currentLevel <= 70 and self.maxLevel = 70:
             # Anywhere from 60 to 70-, smooth to 70-
-            return "70"
+            return 9, "70"
         elif self.currentLevel == 70 and self.maxLevel == 80:
             # Level is 70/80, or 70+
-            return "70+"
+            return 10, "70+"
         elif 70 < self.currentLevel <= 80 and self.maxLevel == 80:
             # Anywhere from 70 to 80-, smooth to 80-
-            return "80"
+            return 11, "80"
         elif self.currentLevel == 80 and self.maxLevel == 90:
             # Level is 80/90, or 90+
-            return "80+"
+            return 12, "80+"
         elif 80 < self.currentLevel <= 90 and self.maxLevel == 90:
             # Anywhere from 80 to 90, smooth to 90
-            return "90"
-
-    # Helper function to get level mapping dictionary
-    def __getLevelMappings(self, levelStr):
-        levelMapping = ["1", "20", "20+", "40", "40+", "50",
-                        "50+", "60", "60+", "70", "70+", "80", "80+", "90"]
-
-        # Return the index in the list of the found levelStr
-        return levelMapping.index(levelStr)
+            return 13, "90"

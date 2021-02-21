@@ -14,10 +14,8 @@ class Zhongli(Character):
         # Read data from CSV
         levelBaseStats = pandas.read_csv("levelBaseStats.csv")
 
-        # Get, based on the levelTuple, the level mapping index string
-        levelMappingStr = self.__getLevelMappingStr()
-        # Using the level mapping string to get the level mapping index
-        levelMappingIndex = self.__getLevelMappings(levelMappingStr)
+        # Get the level mapping index
+        _, levelMappingIndex = self.__getLevelMappings()
 
         # Use the level mapping to scrape data from the csv
         self._baseHP = levelBaseStats["Base HP"][levelMappingIndex]
@@ -26,6 +24,3 @@ class Zhongli(Character):
         self._baseGeoDMGBonus = levelBaseStats["Geo DMG%"][levelMappingIndex]
         self._baseCritRate = levelBaseStats["CRIT Rate"][levelMappingIndex]
         self._baseCritDMG = levelBaseStats["CRIT DMG"][levelMappingIndex]
-
-    def _calculateAscensionBonuses(self):
-        pass
