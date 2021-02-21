@@ -8,4 +8,4 @@ zhongliInstance = h.Zhongli(
     talentTuple=(1, 1, 1)
 )
 
-print(zhongliInstance._baseHP)
+print(type(zhongliInstance._baseGeoDMGBonus))
