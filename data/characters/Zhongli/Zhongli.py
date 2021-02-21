@@ -1,5 +1,4 @@
 import pandas
-from pathlib import Path
 from ..CharacterAbstract import Character
 
 
