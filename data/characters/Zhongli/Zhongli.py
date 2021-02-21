@@ -17,7 +17,6 @@ class Zhongli(Character):
             "data/characters/Zhongli/levelBaseStats.csv")
 
         # Get the level mapping index
-        # ! This super() call doesn't work???
         levelMappingIndex, _ = super()._getLevelMappings()
 
         # Use the level mapping to scrape data from the csv
