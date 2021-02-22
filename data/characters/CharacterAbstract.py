@@ -12,6 +12,8 @@ class Character(ABC):
         self.currentLevel, self.maxLevel = levelTuple
 
         self._baseHP = 0
+        self._HPPercent = 0
+        self._HPAdditive = 0
         self.CurrentHP = 0
         self.MaxHP = 0
 
