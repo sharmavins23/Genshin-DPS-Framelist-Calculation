@@ -23,5 +23,4 @@ class Ganyu(Character):
         self._charBaseATK = levelBaseStats["Base ATK"][levelMappingIndex]
         self._baseDEF = levelBaseStats["Base DEF"][levelMappingIndex]
         self._baseCritRate = levelBaseStats["CRIT Rate"][levelMappingIndex]
-        self._baseCritDMG = levelBaseStats["CRIT DMG"][levelMappingIndex] + \
-            levelBaseStats["CRIT DMG%"][levelMappingIndex]
+        self._baseCritDMG = levelBaseStats["CRIT DMG"][levelMappingIndex]
