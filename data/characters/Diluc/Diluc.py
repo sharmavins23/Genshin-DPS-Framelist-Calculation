@@ -22,6 +22,5 @@ class Diluc(Character):
         self._baseHP = levelBaseStats["Base HP"][levelMappingIndex]
         self._charBaseATK = levelBaseStats["Base ATK"][levelMappingIndex]
         self._baseDEF = levelBaseStats["Base DEF"][levelMappingIndex]
-        self._ATKPercent = levelBaseStats["ATK%"][levelMappingIndex]
         self._baseCritRate = levelBaseStats["CRIT Rate"][levelMappingIndex]
         self._baseCritDMG = levelBaseStats["CRIT DMG"][levelMappingIndex]
