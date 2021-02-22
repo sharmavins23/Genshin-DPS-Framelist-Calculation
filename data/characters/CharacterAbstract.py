@@ -24,6 +24,7 @@ class Character(ABC):
         self.ATK = 0
 
         self._baseDEF = 0
+        self._DEFPercent = 0
         self.DEF = 0
 
         self._baseElementalMastery = 0
