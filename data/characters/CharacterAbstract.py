@@ -37,7 +37,6 @@ class Character(ABC):
         self.CRITDMG = 0
 
         self._baseHealingBonus = 0
-        self._HealingBonusPercent = 0
         self.HealingBonus = 0
         self._baseIncomingHealingBonus = 0
         self.IncomingHealingBonus = 0

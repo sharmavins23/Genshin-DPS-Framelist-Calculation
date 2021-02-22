@@ -22,6 +22,6 @@ class Jean(Character):
         self._baseHP = levelBaseStats["Base HP"][levelMappingIndex]
         self._charBaseATK = levelBaseStats["Base ATK"][levelMappingIndex]
         self._baseDEF = levelBaseStats["Base DEF"][levelMappingIndex]
-        self._HealingBonusPercent = levelBaseStats["Healing Bonus%"][levelMappingIndex]
+        self._baseHealingBonus = levelBaseStats["Healing Bonus%"][levelMappingIndex]
         self._baseCritRate = levelBaseStats["CRIT Rate"][levelMappingIndex]
         self._baseCritDMG = levelBaseStats["CRIT DMG"][levelMappingIndex]
