@@ -42,6 +42,7 @@ class Character(ABC):
         self.IncomingHealingBonus = 0
 
         self._baseEnergyRecharge = 100
+        self._EnergyRechargePercent = 0
         self.EnergyRecharge = 0
 
         self._baseCDReduction = 0
